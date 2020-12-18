@@ -1,0 +1,112 @@
+.cbutton {
+	position: relative;
+	display: inline-block;
+	margin: 1em;
+	padding: 0;
+	border: none;
+	background: rgba(5,5,10,0.8);
+	color: #ff6414;
+	font-size: 2.1em;
+	overflow: visible;
+	-webkit-transition: color 0.7s;
+	transition: color 0.7s;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.cbutton.cbutton--click,
+.cbutton:focus {
+	outline: none;
+	color: aqua;
+}
+
+.cbutton__icon {
+	display: block;
+}
+
+.cbutton__text {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.cbutton::after {
+	position: absolute;
+	top: 50%;
+	left: 2.1%;
+	margin: -50px 0 0 -10px;
+	width: 200px;
+	height: 100px;
+	border-radius: 2%;
+	content: '';
+	opacity: 0;
+	pointer-events: wait;
+}
+
+.cbutton--box {
+	width: 24px;
+	height: 24px;
+	border: 1px solid rgb(22, 35, 47);
+}
+
+.cbutton--box-color-1 {
+	background: #ff8b00;
+}
+
+.cbutton--box-color-2 {
+	background: #b61854;
+}
+
+.cbutton--box-color-3 {
+	background: #1d5cab;
+}
+
+.cbutton--box-color-4 {
+	background: #f2438c;
+}
+
+.cbutton--box-color-5 {
+	background: #ff6414;
+}
+
+.cbutton--box-color-6 {
+	background: #5ed500;
+}
+
+.cbutton--box-color-7 {
+	background: #0077ff;
+}
+
+.cbutton--box-color-8 {
+	background: #7bff00;
+}
+
+.cbutton--box-color-9 {
+	background: #fff;
+}
+
+.cbutton--effect-ilinka::after {
+	background: rgba(111,148,182,0.25);
+}
+
+.cbutton--effect-ilinka.cbutton--click::after {
+	-webkit-animation: anim-effect-ilinka 0.5s ease-out forwards;
+	animation: anim-effect-ilinka 0.5s ease-out forwards;
+}
+
+@-webkit-keyframes anim-effect-ilinka {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes anim-effect-ilinka {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

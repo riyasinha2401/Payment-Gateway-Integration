@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src: url("../fonts/codropsicons/codropsicons.eot");
+	src: url("../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("../fonts/codropsicons/codropsicons.woff") format("woff"), url("../fonts/codropsicons/codropsicons.ttf") format("truetype"), url("../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg");
+}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cf:before,
+.cf:after {
+	content: '';
+	display: table;
+}
+body {
+	background: #cfd8dc;
+	color: #37474f;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+a {
+	color: #D90F4F  ;
+	text-decoration: none;
+	outline: none;
+}
+a:hover,
+a:focus {
+	color: #3f51b5;
+}
+.hidden {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	pointer-events: none;
+}
+.container {
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+.content {
+	padding: 2em 1em 5em;
+	z-index: 10;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.content h2 {
+	margin: 0 0 2em;
+}
+.content p {
+	margin: 1em 0;
+	padding: 0 0 2em;
+	font-size: 0.85em;
+}
+.box {
+	padding: 1.0em 0;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+/* Header */
+.header {
+	padding: 3em 10px 4em;
+	letter-spacing: -1.1px;
+}
+.header h1 {
+	font-weight: 270;
+	font-size: 4em;
+	line-height: 1.2;
+	margin-bottom: 0;
+}
+.header h1 span {
+	display: block;
+	font-size: 40%;
+	letter-spacing: 0;
+	font-weight:900;
+	padding: 0.5em 0 1em 0;
+	color: #169C9C  ;
+}
+.content--related {
+	text-align: center;
+	font-weight: 1000;
+}
+@media screen and (max-width:50em) {
+	.header {
+		padding: 3em 10% 4em;
+	}
+}
+@media screen and (max-width:40em) {
+	.header h1 {
+		font-size: 2.8em;
+	}
+}

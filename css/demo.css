@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	background: #340E7B;
+background: -webkit-linear-gradient(top left, #340E7B, #EA7B46);
+background: -moz-linear-gradient(top left, #340E7B, #EA7B46);
+background: linear-gradient(to bottom right, #340E7B, #EA7B46);
+	font-weight: 500;
+	font-size: 1em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: springgreen;
+}
+
+.hidden {
+	position: absolute;
+	pointer-events: none;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.header {
+	padding: 0;
+	text-align: center;
+}
+
+.header h1 {
+	font-weight: Bolder;
+	font-size: 3.0em;
+	line-height: 1;
+	margin-bottom: 0;
+	letter-spacing: -2px;
+}
+
+
+/* Content */
+.content {
+	padding: 3em 0;
+}
+
+.box {
+	padding: 0.2em;
+	min-height: 204px;
+	text-align: center;
+}
+
+.box__title {
+	color: rgb(21, 205, 227);
+	text-transform: uppercase;
+	letter-spacing: 4.2px;
+	font-size: 1.5em;
+	margin-bottom: 0.0em;
+}
+
+
+@media screen and (max-width: 50em) {
+	.codrops-header {
+		padding: 3em 10% 4em;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.codrops-header h1 {
+		font-size: 2.8em;
+	}
+}
